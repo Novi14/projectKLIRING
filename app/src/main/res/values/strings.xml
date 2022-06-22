@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">homekliring</string>
+    <string name="title_home">Home</string>
+    <string name="title_history">history</string>
+    <string-array name="kliring">
+        <item>Shopee pay </item>
+        <item> Dana </item>
+        <item> Link aja </item>
+        <item> ovo </item>
+        <item> go pay </item>
+    </string-array>
+    <string name="title_help">help</string>
+    <string name="title_profil">profil</string>
+     <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_home">homeActivity</string>
+    <string name="title_activity_account">accountActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //textView
+    <string name="text_tidak_ada_koneksi">Tidak ada koneksi internet</string>
+    <string name="req_password_same">Password tidak sama</string>
+    <string name="login_unauthorized">Login gagal, email atau password anda salah</string>
+    <string name="login_failure">Login gagal, pastikan smartphone anda terkoneksi ke internet</string>
+    <string name="password_change">Untuk mengamankan akun anda, silahkan verifikasi identitas anda dengan memasukkan password yang saat ini anda gunakan.</string>
+    <string name="req_fullname">Masukkan nama lengkap anda minimal 3 karakter</string>
+    <string name="req_email">Masukkan email anda dengan benar</string>
+    <string name="registration_conflict">Registrasi gagal, email yang digunakan sudah terdaftar</string>
+    <string name="registration_failure">Registrasi gagal, pastikan smartphone anda terkoneksi ke internet</string>
+    <string name="req_password_up_to_8">Password kurang dari 8 karakter</string>
+    <string name="req_true_email_and_password">Email atau password anda salah</string>
+    <string name="periksa_jaringan">Mohon Periksa Jaringan Anda</string>
+    <string name="silahkan_login">Silahkan Login Kembali</string>
+    <string name="email_password_salah">Password Salah</string>
+    <string name="format_email_tidak_benar">Email tidak boleh kosong</string>
+    <string name="kata_sandi">Password Harus Lebh Dari 8 Karakter</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+
+</resources>

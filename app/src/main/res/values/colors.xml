@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gelap">#3F3D56</color>
+    <color name="biru_tua">#5BCDD4</color>
+    <color name="biru">#66E4EC</color>
+    <color name="biru_muda">#B2FFF5</color>
+    <color name="biru_putih">#EFFFFD</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#63C7DB</color>
+    <color name="birutua">#3B577D</color>
+    <color name="abu">#89909B</color>
+    <color name="merah">#F4925B</color>
+    <color name="ijomuda">#4FD4B8</color>
+</resources>

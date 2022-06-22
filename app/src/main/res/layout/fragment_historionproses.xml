@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    tools:context=".ui.history.historyoProcess">
+
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Transaction History"
+        android:textColor="@color/birutua"
+        android:textSize="@dimen/_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44">
+
+        <TextView
+            android:id="@+id/tv_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="On Process"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_20dp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Done"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_20dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/rafiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:gravity="center"
+        android:text="All your transaction is done!"
+        android:textColor="@color/abu"
+        android:textSize="@dimen/_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/tv_see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="See History"
+        android:gravity="center"
+        android:textColor="@color/merah"
+        android:textSize="@dimen/_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

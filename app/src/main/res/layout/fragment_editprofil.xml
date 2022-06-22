@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16sdp"
+    tools:context="ui.profil.EditprofilFragment">
+
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_60sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:includeFontPadding="false"
+        android:text="Edit Profile"
+        android:textColor="@color/birutua"
+        android:textSize="@dimen/_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civChangeProfile"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fotoprofil"
+        app:layout_constraintEnd_toStartOf="@+id/tv_change"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_110sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Change Profile Photo"
+        android:textColor="@color/merah"
+        android:textSize="@dimen/_12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/civChangeProfile"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/civChangeProfile">
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Full Name"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableEnd="@drawable/item4"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:hint="Emma Agustin"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Mobile Number"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableEnd="@drawable/item4"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:hint="089898102345"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

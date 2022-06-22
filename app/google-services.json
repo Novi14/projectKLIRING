@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "297998481639",
+    "project_id": "kliring-6cc40",
+    "storage_bucket": "kliring-6cc40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:297998481639:android:f1182d448038eaf98d4a42",
+        "android_client_info": {
+          "package_name": "com.example.homekliring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "297998481639-g09c62ob1mp6qpm4dttdr9nfnfrscrgl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVNTnFTpUS7tPjo__lnz65c8tZqdBzRxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "297998481639-g09c62ob1mp6qpm4dttdr9nfnfrscrgl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.homekliring.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_profilFragment"
+            app:destination="@id/navigasi_profil" />
+        <action
+            android:id="@+id/action_navigation_home_to_historydone"
+            app:destination="@id/historydone" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/accountFragment"
+        android:name="com.example.homekliring.ui.profil.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" >
+        <action
+            android:id="@+id/action_accountFragment_to_navigasi_profil"
+            app:destination="@id/navigasi_profil" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/navigasi_profil"
+        android:name="com.example.homekliring.ui.profil.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profilFragment_to_changepassword"
+            app:destination="@id/changepassword" />
+        <action
+            android:id="@+id/action_profilFragment_to_accountFragment"
+            app:destination="@id/accountFragment" />
+        <action
+            android:id="@+id/action_profilFragment_to_uploudprofilFragment"
+            app:destination="@id/uploudprofilFragment" />
+        <action
+            android:id="@+id/action_navigasi_profil_to_edit_profil"
+            app:destination="@id/edit_profil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changepassword"
+        android:name="com.example.homekliring.ui.profil.ChangeProfilFragment"
+        android:label="fragment_changepassword"
+        tools:layout="@layout/fragment_changepassword">
+        <action
+            android:id="@+id/action_changepassword_to_profilFragment"
+            app:destination="@id/navigasi_profil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_profil"
+        android:name="com.example.homekliring.ui.profil.EditprofilFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_editprofil">
+        <action
+            android:id="@+id/action_editprofil_to_profilFragment"
+            app:destination="@id/navigasi_profil" />
+        <action
+            android:id="@+id/action_edit_profil_to_changepassword"
+            app:destination="@id/changepassword" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/historydone"
+        android:label="fragment_history"
+        android:name="com.example.homekliring.ui.history.historyFragment"
+        tools:layout="@layout/fragment_historydone">
+        <action
+            android:id="@+id/action_historydone_to_historionproses"
+            app:destination="@id/historionproses" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/historionproses"
+        android:label="fragment_historionproses"
+        android:name="com.example.homekliring.ui.history.historyoProcess"
+        tools:layout="@layout/fragment_historionproses">
+        <action
+            android:id="@+id/action_historionproses_to_historionproces"
+            app:destination="@id/historionproces" />
+        <action
+            android:id="@+id/action_historionproses_to_historydone"
+            app:destination="@id/historydone" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/trasaksiberhasil"
+        android:name="com.example.homekliring.ui.trasfer.Transaksiberhasilfragment"
+        android:label="fragment_transaksiberhasil"
+        tools:layout="@layout/fragment_transaksiberhasil">
+        <action
+            android:id="@+id/action_trasaksiberhasil_to_buktitrasferFragment"
+            app:destination="@id/buktitrasferFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/historionproces"
+        android:label="fragment_historionproces"
+        tools:layout="@layout/fragment_historionproces"/>
+    <fragment
+        android:id="@+id/trasferfisrtFragment"
+        android:label="fragment_trasferfisrt"
+        android:name="com.example.homekliring.ui.trasfer.trasferfrish"
+        tools:layout="@layout/fragment_trasferfisrt" >
+        <action
+            android:id="@+id/action_trasferfisrtFragment_to_trsfermetodeFragment"
+            app:destination="@id/trsfermetodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trsfermetodeFragment"
+        android:label="fragment_trsfermetode"
+        android:name="com.example.homekliring.ui.trasfer.trasfermetode"
+        tools:layout="@layout/fragment_trsfermetode" >
+        <action
+            android:id="@+id/action_trsfermetodeFragment_to_trasfermetode1Fragment"
+            app:destination="@id/trasfermetode1Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigasi_trasfer"
+        android:label="fragment_trasfer"
+        android:name="com.example.homekliring.ui.history.TrasferFragment"
+        tools:layout="@layout/fragment_trasfer" >
+        <action
+            android:id="@+id/action_navigasi_trasfer_to_trasferfisrtFragment"
+            app:destination="@id/trasferfisrtFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploudprofilFragment"
+        android:label="fragment_uploudprofil"
+        android:name="com.example.homekliring.ui.profil.uploudprofilfragment"
+        tools:layout="@layout/fragment_uploudprofil" >
+        <action
+            android:id="@+id/action_uploudprofilFragment_to_alreadyFragment"
+            app:destination="@id/alreadyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trasfermetode1Fragment"
+        android:label="fragment_trasfermetode1"
+        android:name="com.example.homekliring.ui.trasfer.TrasfermetodeFragment"
+        tools:layout="@layout/fragment_trasfermetode1" >
+        <action
+            android:id="@+id/action_trasfermetode1Fragment_to_trasfertokliringFragment"
+            app:destination="@id/trasfertokliringFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/trasfertokliringFragment"
+        android:label="fragment_trasfertokliring"
+        android:name="com.example.homekliring.ui.trasfer.TrasfertokliringFragment"
+        tools:layout="@layout/fragment_trasfertokliring" >
+        <action
+            android:id="@+id/action_trasfertokliringFragment_to_uploadbuktitrasferFragment"
+            app:destination="@id/uploadbuktitrasferFragment" />
+        <action
+            android:id="@+id/action_trasfertokliringFragment_to_trasferfisrtFragment"
+            app:destination="@id/trasferfisrtFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/uploadbuktiFragment"
+        android:label="fragment_uploadbukti"
+        android:name="com.example.homekliring.ui.trasfer.UplodbuktiFragment"
+        tools:layout="@layout/fragment_uploudbukti" >
+        <action
+            android:id="@+id/action_uploadbuktiFragment_to_trasaksiberhasil"
+            app:destination="@id/trasaksiberhasil" />
+    </fragment>
+    <fragment
+        android:id="@+id/uploadbuktitrasferFragment"
+        android:name="com.example.homekliring.ui.trasfer.Uplodbuktitrasferfragment"
+        android:label="fragment_uploadbuktitrasfer"
+        tools:layout="@layout/fragment_uploadbuktitrasfer" >
+        <action
+            android:id="@+id/action_uploadbuktitrasferFragment_to_uploadbuktiFragment"
+            app:destination="@id/uploadbuktiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alreadyFragment"
+        android:name="com.example.homekliring.ui.profil.AlreadyFragment"
+        android:label="fragment_already"
+        tools:layout="@layout/fragment_already" />
+    <fragment
+        android:id="@+id/buktitrasferFragment"
+        android:name="com.example.homekliring.ui.trasfer.BuktiTrasfer"
+        android:label="fragment_buktitrasfer"
+        tools:layout="@layout/fragment_buktitrasfer" />
+
+
+</navigation>

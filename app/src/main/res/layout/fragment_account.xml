@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_abu"
+    android:layout_height="match_parent"
+    tools:context=".ui.profil.AccountFragment">
+
+    <LinearLayout
+        android:layout_width="@dimen/_160sdp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_margin="@dimen/_20dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textColor="@color/birutua"
+            android:textSize="@dimen/_21sdp"/>
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="normal"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Are you sure want to logout?"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:background="@drawable/bg_abu"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/merah"/>
+
+            <TextView
+                android:id="@+id/tv_logOut2"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="normal"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:textColor="@color/abu"
+                android:gravity="center"
+                android:background="@drawable/bg_abu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Logout" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

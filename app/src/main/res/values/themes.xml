@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Homekliring" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/birutua</item>
+        <item name="colorPrimaryVariant">@color/biru_tua</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#FFFFFF</item>
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="DialogButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="theme">@style/DialogButton</item>
+    </style>
+
+
+
+
+    <style name="Theme.Homekliring.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.kliring.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.kliring.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
