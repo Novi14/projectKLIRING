@@ -63,16 +63,163 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
     <TextView
-        android:id="@+id/textView56"
-        android:layout_width="wrap_content"
+        android:id="@+id/textView38"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:text="Rp 351.289"
+        android:textColor="@color/merah"
+        android:textSize="22dp"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:textStyle="normal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:gravity="center"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="25 Maret 2022, 14.40"
         android:textColor="@color/abu"
         android:textSize="@dimen/_12dp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView56">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Transfer From"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/shopeepay" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="EMMA AGUSTIN"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="089898102345"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_12dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="vertical"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:id="@+id/textView80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Recipient"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            android:textStyle="normal"
+            android:fontFamily="@font/josefin_sans_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/ovo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView83"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EDWARD"
+                    android:textStyle="normal"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:fontFamily="@font/josefin_sans_bold"/>
+
+                <TextView
+                    android:id="@+id/textView85"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_12dp"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:textStyle="normal"
+                    android:layout_height="wrap_content"
+                    android:text="081234567890" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

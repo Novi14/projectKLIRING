@@ -44,6 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginEnd="@dimen/_20sdp"
@@ -53,13 +54,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView57">
 
 
-        <Spinner
+        <AutoCompleteTextView
             android:id="@+id/spinner"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="OVO"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            android:inputType="none"
+            android:textStyle="normal"
+            android:fontFamily="@font/josefin_sans_bold"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
 
-        </Spinner>
+        </AutoCompleteTextView>
 
 
         <com.google.android.material.textfield.TextInputLayout

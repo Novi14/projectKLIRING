@@ -29,7 +29,7 @@ object RetrofitBuilder {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://localhost:3000/doc/#/")
+            .baseUrl("http://localhost:3000/")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
