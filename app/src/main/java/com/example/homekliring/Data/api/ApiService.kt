@@ -11,14 +11,14 @@ interface ApiService {
 
     //Untuk login
     @FormUrlEncoded
-    @POST("auth/login")
+    @POST("/auth/login")
     fun loginUser(
         @Field("email") email: String,
         @Field("password") password: String
     ): Call<LoginResponse>
 
     //Untuk Register
-    @POST("user/register")
+    @POST("/user/register")
     fun registerUser(
         @Body param: Map<String, String>
     ): Call<RegisterResponse>

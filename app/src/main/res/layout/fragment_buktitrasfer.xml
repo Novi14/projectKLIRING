@@ -9,7 +9,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/btn_out"
         android:layout_width="@dimen/_15sdp"
         android:layout_height="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_24sdp"
@@ -122,6 +122,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
             android:orientation="horizontal">
 
             <ImageView
@@ -185,6 +186,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
             android:orientation="horizontal">
 
             <ImageView
@@ -198,6 +200,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:layout_marginStart="@dimen/_20sdp"
                 android:orientation="vertical">
 
                 <TextView

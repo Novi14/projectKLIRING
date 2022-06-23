@@ -1,12 +1,12 @@
 package com.example.homekliring.Data.retrofit
 
 import android.content.Context
-import com.example.homekliring.Data.api.ApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import com.chuckerteam.chucker.api.ChuckerCollector
 import com.chuckerteam.chucker.api.ChuckerInterceptor
+import com.example.homekliring.Data.api.ApiService
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
@@ -29,7 +29,7 @@ object RetrofitBuilder {
             .build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://localhost:3000/")
+            .baseUrl("http://192.168.1.22:3000")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()

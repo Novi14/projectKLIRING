@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.homekliring.R
 import com.example.homekliring.databinding.FragmentBuktitrasferBinding
 
 class BuktiTrasfer  : Fragment() {
@@ -18,6 +20,17 @@ class BuktiTrasfer  : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentBuktitrasferBinding .inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        with(binding){
+            btnOut.setOnClickListener {
+                findNavController().navigate(R.id.action_buktitrasferFragment_to_navigasi_trasfer)
+            }
+
+
+        }
     }
 
 

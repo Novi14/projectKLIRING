@@ -19,7 +19,7 @@
 
     </fragment>
     <dialog
-        android:id="@+id/accountFragment"
+        android:id="@+id/navigation_help"
         android:name="com.example.homekliring.ui.profil.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" >
@@ -38,7 +38,7 @@
             app:destination="@id/changepassword" />
         <action
             android:id="@+id/action_profilFragment_to_accountFragment"
-            app:destination="@id/accountFragment" />
+            app:destination="@id/navigation_help" />
         <action
             android:id="@+id/action_profilFragment_to_uploudprofilFragment"
             app:destination="@id/uploudprofilFragment" />
@@ -195,7 +195,11 @@
         android:id="@+id/buktitrasferFragment"
         android:name="com.example.homekliring.ui.trasfer.BuktiTrasfer"
         android:label="fragment_buktitrasfer"
-        tools:layout="@layout/fragment_buktitrasfer" />
+        tools:layout="@layout/fragment_buktitrasfer" >
+        <action
+            android:id="@+id/action_buktitrasferFragment_to_navigasi_trasfer"
+            app:destination="@id/navigasi_trasfer" />
+    </fragment>
 
 
 </navigation>

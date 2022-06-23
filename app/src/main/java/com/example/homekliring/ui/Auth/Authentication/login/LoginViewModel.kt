@@ -33,10 +33,18 @@ class LoginViewModel : ViewModel() {
 
                         result.value = LoginEntity(
                             responseResult?.token?: "",
+                            responseResult?.id?:0,
+                            responseResult?.namaUser?:"",
+                            responseResult?.email?:""
+
                         )
                     } else {
                         result.value = LoginEntity(
                             response.code().toString(),
+                            response.code().toInt(),
+                            response.code().toString(),
+                            response.code().toString()
+
 
                         )
                     }
@@ -44,7 +52,7 @@ class LoginViewModel : ViewModel() {
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                     result.value = LoginEntity(
-                        "",
+                        "",0,"",""
 
                     )
                     Log.e("Login ", " gagal, ${t.message}", t)
