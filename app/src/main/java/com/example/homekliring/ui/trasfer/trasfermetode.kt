@@ -28,6 +28,10 @@ class trasfermetode : Fragment() {
                 findNavController().navigate(R.id.action_trsfermetodeFragment_to_trasfermetode1Fragment)
             }
 
+            btnBack2.setOnClickListener {
+                findNavController().navigate(R.id.action_trsfermetodeFragment_to_trasferfisrtFragment)
+            }
+
 
         }
     }

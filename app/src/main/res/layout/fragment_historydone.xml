@@ -8,20 +8,32 @@
     tools:context=".ui.history.historyFragment">
 
 
+    <ImageView
+        android:id="@+id/btn_back7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_250sdp"
+        android:src="@drawable/vektorback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView41"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Transaction History"
         android:textColor="@color/birutua"
         android:textSize="@dimen/_24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_back7" />
 
     <LinearLayout
         android:id="@+id/linearLayout4"
@@ -56,22 +68,23 @@
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="331dp"
-        android:layout_height="56dp"
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:background="@drawable/bg_account"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginEnd="@dimen/_20sdp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -109,8 +122,8 @@
                     android:id="@+id/tv_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Rp.28.000"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Rp.28.000"
                     android:textColor="@color/birutua"
                     android:textSize="@dimen/_14dp" />
 
@@ -118,8 +131,8 @@
                     android:id="@+id/tv_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Succsesful"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Succsesful"
                     android:textColor="@color/biru_tua" />
             </LinearLayout>
         </LinearLayout>
@@ -128,15 +141,14 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="331dp"
-        android:layout_height="56dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:background="@drawable/bg_account"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442">
+        app:layout_constraintTop_toBottomOf="@+id/cardView6">
 
 
         <LinearLayout
@@ -156,16 +168,16 @@
                     android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Go Pay Edward"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Go Pay Edward"
                     android:textColor="@color/birutua"
                     android:textSize="@dimen/_14dp" />
 
                 <TextView
                     android:id="@+id/textView22"
-                    android:fontFamily="@font/josefin_sans_bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefin_sans_bold"
                     android:text="From OVO\n14 jan 2022"
                     android:textColor="@color/birutua"
                     android:textSize="@dimen/_14dp" />
@@ -183,8 +195,8 @@
                     android:id="@+id/textView23"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rp.28.000"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Rp.28.000"
                     android:textColor="@color/birutua"
                     android:textSize="@dimen/_14dp" />
 
@@ -192,8 +204,8 @@
                     android:id="@+id/textView24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Succsesful"
                     android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Succsesful"
                     android:textColor="@color/biru_tua" />
             </LinearLayout>
         </LinearLayout>

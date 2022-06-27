@@ -1,7 +1,7 @@
-package com.example.homekliring.Data.api
+package com.example.homekliring.Data.Api
 
-import com.example.homekliring.Data.response.LoginResponse
-import com.example.homekliring.Data.response.RegisterResponse
+import com.example.homekliring.Data.Response.loginResponse
+import com.example.homekliring.Data.Response.registerResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.Field
@@ -11,17 +11,17 @@ interface ApiService {
 
     //Untuk login
     @FormUrlEncoded
-    @POST("/auth/login")
+    @POST("/auth/login/pengguna")
     fun loginUser(
         @Field("email") email: String,
         @Field("password") password: String
-    ): Call<LoginResponse>
+    ): Call<loginResponse>
 
     //Untuk Register
-    @POST("/user/register")
+    @POST("/user/register/pengguna")
     fun registerUser(
         @Body param: Map<String, String>
-    ): Call<RegisterResponse>
+    ): Call<registerResponse>
 
 
 

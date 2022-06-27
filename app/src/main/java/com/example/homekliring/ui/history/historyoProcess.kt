@@ -38,6 +38,10 @@ class historyoProcess  : Fragment() {
                 findNavController().navigate(R.id.action_historionproses_to_historionproces)
             }
 
+            btnBack8.setOnClickListener {
+                findNavController().navigate(R.id.action_historydone_to_historionproses)
+            }
+
 
         }
     }

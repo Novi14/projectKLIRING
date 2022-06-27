@@ -32,6 +32,10 @@ class TrasfertokliringFragment : Fragment() {
                 findNavController().navigate(R.id.action_trasfertokliringFragment_to_uploadbuktitrasferFragment)
             }
 
+            btnBack6.setOnClickListener {
+                findNavController().navigate(R.id.action_trasfertokliringFragment_to_trasfermetode1Fragment)
+            }
+
 
         }
     }

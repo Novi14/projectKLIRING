@@ -75,15 +75,21 @@
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_startFragment"
+            app:destination="@id/startFragment" />
     </fragment>
     <fragment
         android:id="@+id/email_verifikasiFragment"
-        android:name="com.example.kliring_g.email_verifikasiFragment"
+        android:name="com.example."
         android:label="fragment_email_verifikasi"
         tools:layout="@layout/fragment_email_verifikasi" >
         <action
             android:id="@+id/action_email_verifikasiFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_email_verifikasiFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
     </fragment>
     <fragment
         android:id="@+id/forgotPasswordFragment2"
@@ -96,6 +102,9 @@
         <action
             android:id="@+id/action_forgotPasswordFragment2_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_forgotPasswordFragment2_to_changeProfilFragment"
+            app:destination="@id/changeProfilFragment" />
     </fragment>
     <fragment
         android:id="@+id/riset_passwordFragment2"
@@ -105,12 +114,20 @@
         <action
             android:id="@+id/action_riset_passwordFragment2_to_loginFragment"
             app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_riset_passwordFragment2_to_forgotPasswordFragment2"
+            app:destination="@id/forgotPasswordFragment2" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
         android:name="com.example.homekliring.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/changeProfilFragment"
+        android:name="com.example.homekliring.ui.profil.ChangeProfilFragment"
+        android:label="fragment_changepassword"
+        tools:layout="@layout/fragment_changepassword" />
 
 
 </navigation>

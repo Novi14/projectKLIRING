@@ -16,16 +16,25 @@
         <action
             android:id="@+id/action_navigation_home_to_historydone"
             app:destination="@id/historydone" />
+        <action
+            android:id="@+id/action_navigation_home_to_helpFragment"
+            app:destination="@id/navigation_help" />
+        <action
+            android:id="@+id/action_navigation_home_to_notifFragment2"
+            app:destination="@id/notifFragment2" />
 
     </fragment>
     <dialog
-        android:id="@+id/navigation_help"
+        android:id="@+id/accountfragment"
         android:name="com.example.homekliring.ui.profil.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" >
         <action
             android:id="@+id/action_accountFragment_to_navigasi_profil"
             app:destination="@id/navigasi_profil" />
+        <action
+            android:id="@+id/action_navigation_help_to_notifikasi_besrhasillogout"
+            app:destination="@id/notifikasi_besrhasillogout" />
     </dialog>
 
     <fragment
@@ -40,11 +49,14 @@
             android:id="@+id/action_profilFragment_to_accountFragment"
             app:destination="@id/navigation_help" />
         <action
-            android:id="@+id/action_profilFragment_to_uploudprofilFragment"
-            app:destination="@id/uploudprofilFragment" />
-        <action
             android:id="@+id/action_navigasi_profil_to_edit_profil"
             app:destination="@id/edit_profil" />
+        <action
+            android:id="@+id/action_navigasi_profil_to_uoloudfotoprofilFragment"
+            app:destination="@id/uoloudfotoprofilFragment" />
+        <action
+            android:id="@+id/action_navigasi_profil_to_accountfragment"
+            app:destination="@id/accountfragment" />
     </fragment>
 
     <fragment
@@ -55,6 +67,9 @@
         <action
             android:id="@+id/action_changepassword_to_profilFragment"
             app:destination="@id/navigasi_profil" />
+        <action
+            android:id="@+id/action_changepassword_to_edit_profil"
+            app:destination="@id/edit_profil" />
     </fragment>
 
     <fragment
@@ -68,6 +83,12 @@
         <action
             android:id="@+id/action_edit_profil_to_changepassword"
             app:destination="@id/changepassword" />
+        <action
+            android:id="@+id/action_edit_profil_to_navigasi_profil"
+            app:destination="@id/navigasi_profil" />
+        <action
+            android:id="@+id/action_edit_profil_to_uoloudfotoprofilFragment"
+            app:destination="@id/uoloudfotoprofilFragment" />
     </fragment>
 
 
@@ -79,6 +100,9 @@
         <action
             android:id="@+id/action_historydone_to_historionproses"
             app:destination="@id/historionproses" />
+        <action
+            android:id="@+id/action_historydone_to_navigation_home"
+            app:destination="@id/navigation_home" />
     </fragment>
 
     <fragment
@@ -117,6 +141,9 @@
         <action
             android:id="@+id/action_trasferfisrtFragment_to_trsfermetodeFragment"
             app:destination="@id/trsfermetodeFragment" />
+        <action
+            android:id="@+id/action_trasferfisrtFragment_to_navigasi_trasfer"
+            app:destination="@id/navigasi_trasfer" />
     </fragment>
     <fragment
         android:id="@+id/trsfermetodeFragment"
@@ -126,6 +153,9 @@
         <action
             android:id="@+id/action_trsfermetodeFragment_to_trasfermetode1Fragment"
             app:destination="@id/trasfermetode1Fragment" />
+        <action
+            android:id="@+id/action_trsfermetodeFragment_to_trasferfisrtFragment"
+            app:destination="@id/trasferfisrtFragment" />
     </fragment>
 
     <fragment
@@ -154,6 +184,9 @@
         <action
             android:id="@+id/action_trasfermetode1Fragment_to_trasfertokliringFragment"
             app:destination="@id/trasfertokliringFragment" />
+        <action
+            android:id="@+id/action_trasfermetode1Fragment_to_trsfermetodeFragment"
+            app:destination="@id/trsfermetodeFragment" />
     </fragment>
     <fragment
         android:id="@+id/trasfertokliringFragment"
@@ -166,6 +199,9 @@
         <action
             android:id="@+id/action_trasfertokliringFragment_to_trasferfisrtFragment"
             app:destination="@id/trasferfisrtFragment" />
+        <action
+            android:id="@+id/action_trasfertokliringFragment_to_trasfermetode1Fragment"
+            app:destination="@id/trasfermetode1Fragment" />
     </fragment>
 
     <fragment
@@ -200,6 +236,55 @@
             android:id="@+id/action_buktitrasferFragment_to_navigasi_trasfer"
             app:destination="@id/navigasi_trasfer" />
     </fragment>
+    <fragment
+        android:id="@+id/notifikasi_besrhasillogout"
+        android:name="com.example.homekliring.ui.profil.logoutFragment"
+        android:label="fragment_notifikasi_besrhasillogout"
+        tools:layout="@layout/fragment_notifikasi_besrhasillogout" >
+        <action
+            android:id="@+id/action_notifikasi_besrhasillogout_to_secondScreenFragment"
+            app:destination="@id/secondScreenFragment" />
+        <action
+            android:id="@+id/action_notifikasi_besrhasillogout_to_startFragment2"
+            app:destination="@id/startFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifFragment2"
+        android:name="com.example.homekliring.ui.notifications.NotificationsFragment"
+        android:label="fragment_notif"
+        tools:layout="@layout/fragment_notif" >
+        <action
+            android:id="@+id/action_notifFragment2_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_help"
+        android:name="com.example.homekliring.ui.help.helpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" >
+        <action
+            android:id="@+id/action_helpFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/uoloudfotoprofilFragment"
+        android:name="com.example.homekliring.ui.profil.uploudprofilfragment"
+        android:label="fragment_uoloudfotoprofil"
+        tools:layout="@layout/fragment_uoloudfotoprofil" >
+        <action
+            android:id="@+id/action_uoloudfotoprofilFragment_to_uploudprofilFragment"
+            app:destination="@id/uploudprofilFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreenFragment"
+        android:name="com.example.homekliring.ui.Auth.Onboarding.Screens.SecondScreenFragment"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" />
+    <fragment
+        android:id="@+id/startFragment2"
+        android:name="com.example.homekliring.ui.Auth.Authentication.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
 
 
 </navigation>

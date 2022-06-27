@@ -5,9 +5,9 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.homekliring.Data.api.ApiService
-import com.example.homekliring.Data.entity.LoginEntity
-import com.example.homekliring.Data.response.LoginResponse
+import com.example.homekliring.Data.Api.ApiService
+import com.example.homekliring.Data.entity.loginEntity
+import com.example.homekliring.Data.Response.loginResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,49 +19,39 @@ class LoginViewModel : ViewModel() {
         apiService: ApiService,
         email: String,
         password: String
-    ): LiveData<LoginEntity> {
-        val result = MutableLiveData<LoginEntity>()
+    ): LiveData<loginEntity> {
+        val result = MutableLiveData<loginEntity>()
 
-        try {
-            apiService.loginUser(email, password).enqueue(object : Callback<LoginResponse> {
-                override fun onResponse(
-                    call: Call<LoginResponse>,
-                    response: Response<LoginResponse>
-                ) {
-                    if (response.isSuccessful) {
-                        val responseResult = response.body()
+        apiService.loginUser(email, password).enqueue(object : Callback<loginResponse> {
+            override fun onResponse(
+                call: Call<loginResponse>,
+                response: Response<loginResponse>
+            ) {
+                val responseResult = response.body()
 
-                        result.value = LoginEntity(
-                            responseResult?.token?: "",
-                            responseResult?.id?:0,
-                            responseResult?.namaUser?:"",
-                            responseResult?.email?:""
-
-                        )
-                    } else {
-                        result.value = LoginEntity(
-                            response.code().toString(),
-                            response.code().toInt(),
-                            response.code().toString(),
-                            response.code().toString()
-
-
-                        )
-                    }
-                }
-
-                override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                    result.value = LoginEntity(
-                        "",0,"",""
-
+                if(response.isSuccessful) {
+                    result.value = loginEntity (
+                        responseResult?.status ?:0,
+                        responseResult?.message ?:"",
+                        responseResult?.accessToken ?:"",
+                        responseResult?.refreshToken ?:""
                     )
-                    Log.e("Login ", " gagal, ${t.message}", t)
+                } else {
+                    result.value = loginEntity(
+                        0, "", "", ""
+                    )
                 }
-            })
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Log.e("LOGIN", "Login User: ${e.message}", e)
-        }
+            }
+
+            override fun onFailure(call: Call<loginResponse>, t: Throwable) {
+                Log.e("Login", "onFailure: ${t.message}", t)
+            }
+        })
         return result
     }
+
+    companion object {
+        const val FAILED_MESSAGE = "Login Failed"
+    }
+
 }

@@ -42,7 +42,7 @@ class ProfilFragment : Fragment() {
             }
 
             tvLogout.setOnClickListener {
-                findNavController().navigate(R.id.action_profilFragment_to_accountFragment)
+                findNavController().navigate(R.id.action_navigasi_profil_to_accountfragment)
             }
 
 

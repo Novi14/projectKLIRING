@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.kliring." parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.Homekliring." parent="Theme.MaterialComponents.Light.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/birutua</item>
         <item name="colorPrimaryVariant">@color/white</item>

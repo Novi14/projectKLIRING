@@ -7,21 +7,33 @@
     android:padding="@dimen/_16sdp"
     tools:context=".ui.Auth.Authentication.register.RegisterFragment">
 
+    <ImageView
+        android:id="@+id/btn_back1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_250sdp"
+        android:src="@drawable/vektorback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
         android:fontFamily="@font/josefin_sans_bold"
         android:text="Create Account"
         android:textColor="@color/birutua"
         android:textSize="@dimen/_24dp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView20"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back1" />
 
     <TextView
         android:id="@+id/textView20"
@@ -205,10 +217,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_50sdp"
         android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/josefin_sans_bold"
         android:text="Already Have an Account?"
         android:textColor="@color/abu"
         android:textSize="@dimen/_14dp"
-        android:fontFamily="@font/josefin_sans_bold"
         app:layout_constraintEnd_toStartOf="@+id/tv_logIn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_getstarted" />
@@ -225,6 +237,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView25"
         app:layout_constraintTop_toBottomOf="@+id/btn_getstarted" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

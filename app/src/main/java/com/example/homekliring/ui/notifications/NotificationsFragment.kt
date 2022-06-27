@@ -7,11 +7,13 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.homekliring.databinding.FragmentNotificationsBinding
+import androidx.navigation.fragment.findNavController
+import com.example.homekliring.R
+import com.example.homekliring.databinding.FragmentNotifBinding
 
 class NotificationsFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentNotifBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -25,15 +27,25 @@ class NotificationsFragment : Fragment() {
         val notificationsViewModel =
             ViewModelProvider(this).get(NotificationsViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentNotifBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
+
+
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        with(binding){
+            btnBack9.setOnClickListener {
+                findNavController().navigate(R.id.action_notifFragment2_to_navigation_home)
+            }
+
+
+        }
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

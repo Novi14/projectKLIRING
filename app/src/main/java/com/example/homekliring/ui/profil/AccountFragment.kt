@@ -33,7 +33,7 @@ class AccountFragment : DialogFragment() {
             }
 
             tvLogOut2.setOnClickListener {
-                findNavController().navigate(R.id.loginFragment)
+                findNavController().navigate(R.id.action_navigation_help_to_notifikasi_besrhasillogout)
             }
         }
 

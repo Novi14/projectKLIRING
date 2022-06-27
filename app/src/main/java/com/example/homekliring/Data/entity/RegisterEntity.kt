@@ -6,11 +6,9 @@ import kotlinx.parcelize.Parcelize
 
 @kotlinx.android.parcel.Parcelize
 data class RegisterEntity(
-
-    val client_name: String,
-    val client_email: String,
-    val client_password: String,
-    val client_id: Int
+    val email: String,
+    val id: String,
+    val role: String
 
 
 ): Parcelable

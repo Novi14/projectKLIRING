@@ -37,6 +37,12 @@ class trasferfrish : Fragment() {
                 findNavController().navigate(R.id.action_trasferfisrtFragment_to_trsfermetodeFragment)
             }
 
+            btnBack55.setOnClickListener {
+                findNavController().navigate(R.id.action_trasferfisrtFragment_to_navigasi_trasfer)
+            }
+
+
+
         }
     }
 }

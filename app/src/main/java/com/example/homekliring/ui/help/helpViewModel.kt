@@ -1,10 +1,10 @@
-package com.example.homekliring.ui.dashboard
+package com.example.homekliring.ui.help
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class helpViewModel : ViewModel() {
+class helpViewModel: ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is help Fragment"

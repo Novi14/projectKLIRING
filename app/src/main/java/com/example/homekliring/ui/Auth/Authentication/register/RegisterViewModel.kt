@@ -4,70 +4,54 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.MutableLiveData
-import com.example.homekliring.Data.api.ApiService
-import com.example.homekliring.Data.response.RegisterResponse
+import com.example.homekliring.Data.Api.ApiService
+import com.example.homekliring.Data.Response.registerResponse
 import com.example.homekliring.entity.RegisterEntity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class RegisterViewModel : ViewModel() {
-
+class RegisterViewModel  : ViewModel() {
     fun registerUser(
         apiService: ApiService,
-        name: String,
-        email: String,
-        password: String
-    ): LiveData<RegisterEntity> {
-        val result = MutableLiveData<RegisterEntity>()
+         email: String
+        ): LiveData<RegisterEntity>{
+        val  result = MutableLiveData<RegisterEntity>()
 
-        try {
-            val param = mutableMapOf<String, String>()
-            param["name"] = name
-            param["email"] = email
-            param["password"] = password
+        val param = mutableMapOf<String, String>()
+               param["email"] = email
 
-            apiService.registerUser(param).enqueue(object : Callback<RegisterResponse> {
-                override fun onResponse(
-                    call: Call<RegisterResponse>,
-                    response: Response<RegisterResponse>
-                ) {
-                    if (response.isSuccessful) {
-                        val responseResult = response.body()
+        apiService.registerUser(param).enqueue(object : Callback<registerResponse> {
+            override fun onResponse(
+                call: Call<registerResponse>,
+                response: Response<registerResponse>
+            ) {
 
-                        result.value = RegisterEntity(
-                            responseResult?.namaUser ?: "",
-                            responseResult?.email?: "",
-                            responseResult?.password?: "",
-                            responseResult?.id ?: 0
-                        )
-                    } else {
-                        result.value = RegisterEntity(
-                            response.code().toString(),
-                            "",
-                            "",
-                            0
+                val responseResult = response.body()
+                Log.e("tag", "onResponse: $responseResult")
 
-                        )
-                    }
-                }
-
-                override fun onFailure(call: Call<RegisterResponse>, t: Throwable) {
+                if (response.isSuccessful) {
                     result.value = RegisterEntity(
-                        t.message.toString(),
-                        "",
-                        "",
-                        0
+                        responseResult?.data?.email?:"",
+                        responseResult?.data ?. id?:"",
+                        responseResult?.data?.role ?:""
+
 
                     )
-                    Log.e("Registrasi ", " gagal, ${t.message}", t)
+                } else {
+                    result.value = RegisterEntity(
+                        "",
+                        "",
+                        ""
+                    )
                 }
+            }
 
-            })
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Log.e("REGISTER", "Register User: ${e.message}", e)
-        }
+            override fun onFailure(call: Call<registerResponse>, t: Throwable) {
+                Log.e("Register customer", "onFailure: ${t.message}", t)
+            }
+        })
+
         return result
     }
 }

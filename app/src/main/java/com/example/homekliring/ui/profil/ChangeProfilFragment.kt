@@ -27,6 +27,9 @@ class ChangeProfilFragment : Fragment() {
             btnSave2.setOnClickListener {
                 findNavController().navigate(R.id.action_changepassword_to_profilFragment)
             }
+            btnBack12.setOnClickListener {
+                findNavController().navigate(R.id.action_changepassword_to_edit_profil)
+            }
 
 
         }

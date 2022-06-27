@@ -37,6 +37,10 @@ class historyFragment : Fragment() {
                 findNavController().navigate(R.id.action_historydone_to_historionproses)
             }
 
+            btnBack7.setOnClickListener {
+                findNavController().navigate(R.id.action_historydone_to_navigation_home)
+            }
+
 
         }
     }
