@@ -1,15 +1,12 @@
 package com.example.homekliring.ui.Auth.Authentication.register
 
 
-import android.content.Context
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.widget.doAfterTextChanged
-import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.homekliring.Data.retrofit.RetrofitBuilder
@@ -52,7 +49,7 @@ class RegisterFragment : Fragment() {
                 if(validateInput()) {
                     viewModel.registerUser(
                         RetrofitBuilder.getRetrofit(this@RegisterFragment.requireActivity().applicationContext),
-                        tfEmail.text.toString(),
+                        tfEmail.text.toString(),tfPassword.text.toString(),tfFistname.text.toString()
                        ).observe(requireActivity()) {
                         pbLoading.visibility = View.GONE
 

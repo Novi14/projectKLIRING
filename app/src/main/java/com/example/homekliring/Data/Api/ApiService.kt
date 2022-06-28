@@ -18,7 +18,7 @@ interface ApiService {
     ): Call<loginResponse>
 
     //Untuk Register
-    @POST("/user/register/pengguna")
+        @POST("/users/register/pengguna")
     fun registerUser(
         @Body param: Map<String, String>
     ): Call<registerResponse>

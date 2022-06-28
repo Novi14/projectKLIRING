@@ -14,13 +14,18 @@ import retrofit2.Response
 class RegisterViewModel  : ViewModel() {
     fun registerUser(
         apiService: ApiService,
-         email: String
+         email: String,
+        password:String,
+        nama_user:String
+
         ): LiveData<RegisterEntity>{
         val  result = MutableLiveData<RegisterEntity>()
 
-        val param = mutableMapOf<String, String>()
-               param["email"] = email
 
+        val param = mutableMapOf<String, String>()
+        param["nama_user"] = nama_user
+        param["password"] = password
+        param["email"] = email
         apiService.registerUser(param).enqueue(object : Callback<registerResponse> {
             override fun onResponse(
                 call: Call<registerResponse>,
