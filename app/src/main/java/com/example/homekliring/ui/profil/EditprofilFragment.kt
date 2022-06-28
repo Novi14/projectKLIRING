@@ -32,7 +32,7 @@ class EditprofilFragment : Fragment() {
                 findNavController().navigate(R.id.action_editprofil_to_profilFragment)
             }
               tvChange.setOnClickListener {
-                  findNavController().navigate(R.id.action_edit_profil_to_uoloudfotoprofilFragment)
+                  findNavController().navigate(R.id.action_edit_profil_to_uplodprofil2)
               }
 
               btnBack13.setOnClickListener {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,268 +7,275 @@
     android:padding="@dimen/_16sdp"
     tools:context=".ui.trasfer.TrasfertokliringFragment">
 
-
-    <ImageView
-        android:id="@+id/btn_back6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_250sdp"
-        android:src="@drawable/vektorback"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView67"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="Please Transfer to Kliring Account"
-        android:textColor="@color/birutua"
-        android:textSize="19dp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back6" />
-
-    <TextView
-        android:id="@+id/textView69"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_30sdp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="to be forwarded to OVO 0812******90"
-        android:textColor="@color/birutua"
-        android:textSize="@dimen/_12dp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView67" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_320sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:background="@drawable/bg_abu"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView69">
+        android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageView18"
+            android:id="@+id/btn_back6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_30sdp"
-            android:layout_marginEnd="@dimen/_100sdp"
-            android:src="@drawable/shopeepay"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_250sdp"
+            android:src="@drawable/vektorback"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView70"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView67"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_70sdp"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:fontFamily="@font/josefin_sans_light"
-            android:text="Shopee Pay"
-            android:textColor="@color/abu"
-            android:textSize="@dimen/_14dp"
-            android:textStyle="normal" />
-
-        <TextView
-            android:id="@+id/textView71"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_70sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:fontFamily="@font/josefin_sans_light"
-            android:text="PT.Kliring"
-            android:textColor="@color/abu"
-            android:textSize="@dimen/_14dp"
-            android:textStyle="normal" />
-
-        <TextView
-            android:id="@+id/textView73"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_130sdp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="20dp"
             android:fontFamily="@font/josefin_sans_bold"
-            android:text="Transfer Amount"
-            android:textColor="@color/abu"
-            android:textSize="@dimen/_14dp"
-            android:textStyle="normal" />
-
-        <TextView
-            android:id="@+id/textView77"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_35sdp"
-            android:layout_marginTop="@dimen/_280sdp"
-            android:fontFamily="@font/josefin_sans_light"
-            android:text="Transfer before 26 Mei 2022 15.15"
-            android:textColor="@color/abu"
-            android:textSize="@dimen/_14dp"
-            android:textStyle="normal" />
-
-        <TextView
-            android:id="@+id/textView76"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_40sdp"
-            android:layout_marginTop="@dimen/_200sdp"
-            android:fontFamily="@font/josefin_sans_light"
-            android:text="Make sure the amount is correct to the last 3 digits"
-            android:textColor="@color/merah"
-            android:textSize="@dimen/_10dp"
-            android:textStyle="normal" />
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_150sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:background="@drawable/bg_account">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_abu"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView74"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/_40dp"
-                    android:fontFamily="@font/josefin_sans_bold"
-                    android:text="Rp.351."
-                    android:textColor="@color/abu"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/textView75"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/josefin_sans_bold"
-                    android:text="269"
-                    android:textColor="@color/merah"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_80sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
-            android:background="@drawable/bg_account"
+            android:text="Please Transfer to Kliring Account"
+            android:textColor="@color/birutua"
+            android:textSize="19dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/btn_back6" />
 
-            <LinearLayout
+        <TextView
+            android:id="@+id/textView69"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="to be forwarded to OVO 0812******90"
+            android:textColor="@color/birutua"
+            android:textSize="@dimen/_12dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView67" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_320sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/bg_abu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView69">
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_100sdp"
+                android:src="@drawable/shopeepay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:fontFamily="@font/josefin_sans_light"
+                android:text="Shopee Pay"
+                android:textColor="@color/abu"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/josefin_sans_light"
+                android:text="PT.Kliring"
+                android:textColor="@color/abu"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_130sdp"
+                android:fontFamily="@font/josefin_sans_bold"
+                android:text="Transfer Amount"
+                android:textColor="@color/abu"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_280sdp"
+                android:fontFamily="@font/josefin_sans_light"
+                android:text="Transfer before 26 Mei 2022 15.15"
+                android:textColor="@color/abu"
+                android:textSize="@dimen/_14dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/textView76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:fontFamily="@font/josefin_sans_light"
+                android:text="Make sure the amount is correct to the last 3 digits"
+                android:textColor="@color/merah"
+                android:textSize="@dimen/_10dp"
+                android:textStyle="normal" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bg_abu"
-                android:orientation="horizontal">
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_150sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/bg_account">
 
-                <TextView
-                    android:id="@+id/textView72"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/josefin_sans_bold"
-                    android:text="083788992211"
-                    android:textColor="@color/abu"
-                    android:textSize="@dimen/_16dp"
-                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_abu"
+                    android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/btn_apply"
-                    android:layout_width="65dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="@dimen/_20dp"
-                    android:backgroundTint="@color/merah"
-                    android:fontFamily="@font/josefin_sans_light"
-                    android:text="apply"
-                    android:textAllCaps="false"
-                    android:textSize="11dp"
-                    android:textStyle="bold"
-                    tools:ignore="TouchTargetSizeCheck" />
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView74"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_40dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="Rp.351."
+                        android:textColor="@color/abu"
+                        android:textSize="@dimen/_16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView75"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="269"
+                        android:textColor="@color/merah"
+                        android:textSize="@dimen/_16dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_80sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/bg_account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_abu"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView72"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="083788992211"
+                        android:textColor="@color/abu"
+                        android:textSize="@dimen/_16dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btn_apply"
+                        android:layout_width="65dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_20dp"
+                        android:backgroundTint="@color/merah"
+                        android:fontFamily="@font/josefin_sans_light"
+                        android:text="apply"
+                        android:textAllCaps="false"
+                        android:textSize="11dp"
+                        android:textStyle="bold"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.cardview.widget.CardView>
-    </androidx.cardview.widget.CardView>
 
-    <Button
-        android:id="@+id/btn_uplod"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:backgroundTint="@color/merah"
-        android:fontFamily="@font/josefin_sans_light"
-        android:text="Upload Transfer Recepient"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_16dp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.686"
-        tools:ignore="TouchTargetSizeCheck" />
+        <Button
+            android:id="@+id/btn_uplod"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:backgroundTint="@color/merah"
+            android:fontFamily="@font/josefin_sans_light"
+            android:text="Upload Transfer Recepient"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_16dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.686"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/btn_ready"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="I Already Transfer"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
+        <Button
+            android:id="@+id/btn_ready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="I Already Transfer"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
 
-    <TextView
-        android:id="@+id/textView78"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:fontFamily="@font/josefin_sans_light"
-        android:text="Please click the button above if you already transfer"
-        android:textColor="@color/abu"
-        android:textSize="@dimen/_12dp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_ready" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/josefin_sans_light"
+            android:text="Please click the button above if you already transfer"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_12dp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ready" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

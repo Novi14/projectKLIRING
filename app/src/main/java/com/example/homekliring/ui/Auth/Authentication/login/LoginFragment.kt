@@ -41,6 +41,7 @@ class LoginFragment : Fragment() {
                 findNavController().navigate(R.id.action_loginFragment_to_forgotPasswordFragment2)
             }
 
+
             btnLogin.setOnClickListener {
                 pbLoading.visibility = View.VISIBLE
 
@@ -63,6 +64,8 @@ class LoginFragment : Fragment() {
                                 "Login Success",
                                 Toast.LENGTH_SHORT
                             ).show()
+
+                            findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
                         }
                     }
                 }

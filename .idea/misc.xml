@@ -41,33 +41,49 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/drawable/vektorback.xml" value="0.2075" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/drawable/vektoremail.xml" value="0.2065" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/drawable/vektortrlpon.xml" value="0.2065" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/activity_auth.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/dialog_progress_bar.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/dropdown_item.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_account.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_buktitrasfer.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_changepassword.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_editprofil.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_already.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_buktitrasfer.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_changepassword.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_editprofil.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_email_verifikasi.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_first_screen.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_forgot_password2.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_help.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_help.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_help2.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_historionproces.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_historionproses.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_history.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_historydone.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_login.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_notif.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_notif.xml" value="0.1" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_notifications.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_notifikasi_besrhasillogout.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_onboarding_view_pager.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_register.xml" value="0.18" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_riset_password2.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_transaksiberhasil.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfer.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_register.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_riset_password2.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_second_screen.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_splash.xml" value="0.2" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_start.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_transaksiberhasil.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfer.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfer1.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasferfisrt.xml" value="0.21810699588477367" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfermetode1.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfertokliring.xml" value="0.2" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trsfermetode.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uoloudfotoprofil.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uploadbuktitrasfer.xml" value="0.16485507246376813" />
-        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uploudprofil.xml" value="0.16485507246376813" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfermetode1.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trasfertokliring.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_trsfermetode.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uoloudfotoprofil.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uploadbuktitrasfer.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uploudbukti.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/layout/fragment_uploudprofil.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/menu/bottom_menu.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/homekliring2/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/kliring2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1255" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/kliring2/app/src/main/res/layout/activity_main.xml" value="0.16485507246376813" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/kliring2/app/src/main/res/layout/dropdown_item.xml" value="0.16485507246376813" />

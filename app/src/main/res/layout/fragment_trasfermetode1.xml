@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,278 +8,287 @@
     tools:context=".ui.trasfer.TrasfermetodeFragment">
 
 
-    <ImageView
-        android:id="@+id/btn_back3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_250sdp"
-        android:src="@drawable/vektorback"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView63"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="Choose Transfer Method"
-        android:textColor="@color/birutua"
-        android:textSize="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_back3" />
-
-    <TextView
-        android:id="@+id/textView65"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="Choose your transfer method"
-        android:textColor="@color/abu"
-        android:textSize="@dimen/_16dp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView63" />
-
     <LinearLayout
-        android:id="@+id/linearLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView65">
+        android:orientation="vertical" >
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40dp"
-            android:layout_marginTop="@dimen/_10dp"
-            android:background="@drawable/bg_abu">
 
-            <ImageView
-                android:id="@+id/iv_gopay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/gopey" />
-
-            <TextView
-                android:id="@+id/tv_gopay2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/josefin_sans_bold"
-                android:text="GoPay"
-                android:textColor="@color/abu"
-                android:textSize="@dimen/_16dp"
-                android:textStyle="normal" />
-
-            <RadioButton
-                android:id="@+id/btn_gopay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:ignore="TouchTargetSizeCheck" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/shopeepay"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40dp"
-            android:layout_marginTop="@dimen/_20dp"
-            android:background="@drawable/bg_abu"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <ImageView
+            android:id="@+id/btn_back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_250sdp"
+            android:src="@drawable/vektorback"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/iv_shopeepay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/shopeepay" />
-
-            <TextView
-                android:id="@+id/tv_shopeepay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/josefin_sans_bold"
-                android:text="ShopeePay"
-                android:textColor="@color/abu"
-                android:textSize="@dimen/_16dp"
-                android:textStyle="normal" />
-
-            <RadioButton
-                android:id="@+id/btn_shopeepay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/cardView3"
+        <TextView
+            android:id="@+id/textView63"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40dp"
-            android:layout_marginTop="@dimen/_20dp"
-            android:background="@drawable/bg_abu"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Choose Transfer Method"
+            android:textColor="@color/birutua"
+            android:textSize="26dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.379">
+            app:layout_constraintTop_toBottomOf="@+id/btn_back3" />
 
-            <ImageView
-                android:id="@+id/iv_linkaja"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/linkaja" />
-
-            <TextView
-                android:id="@+id/tv_linkaja"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/josefin_sans_bold"
-                android:text="LinkAja"
-                android:textColor="@color/abu"
-                android:textSize="@dimen/_16dp"
-                android:textStyle="normal" />
-
-            <RadioButton
-                android:id="@+id/btn_linkaja"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:ignore="TouchTargetSizeCheck" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/cardView5"
+        <TextView
+            android:id="@+id/textView65"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40dp"
-            android:layout_marginTop="@dimen/_20dp"
-            android:background="@drawable/bg_abu"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Choose your transfer method"
+            android:textColor="@color/abu"
+            android:textSize="@dimen/_16dp"
+            android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.437"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.446">
-
-
-            <ImageView
-                android:id="@+id/imageView23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:src="@drawable/ovo" />
-
-            <TextView
-                android:id="@+id/textView68"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/josefin_sans_bold"
-                android:text="OVO"
-                android:textColor="@color/abu"
-                android:textSize="@dimen/_16dp"
-                android:textStyle="normal" />
-
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                tools:ignore="TouchTargetSizeCheck" />
-
-        </LinearLayout>
+            app:layout_constraintTop_toBottomOf="@+id/textView63" />
 
         <LinearLayout
+            android:id="@+id/linearLayout7"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40dp"
-            android:layout_marginTop="@dimen/_20dp"
-            android:background="@drawable/bg_abu">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView65">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/bg_abu">
+
+                <ImageView
+                    android:id="@+id/iv_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/gopey" />
+
+                <TextView
+                    android:id="@+id/tv_gopay2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="GoPay"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/btn_gopay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shopeepay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/bg_abu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.243">
+
+                <ImageView
+                    android:id="@+id/iv_shopeepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/shopeepay" />
+
+                <TextView
+                    android:id="@+id/tv_shopeepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="ShopeePay"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/btn_shopeepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardView3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/bg_abu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.379">
+
+                <ImageView
+                    android:id="@+id/iv_linkaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/linkaja" />
+
+                <TextView
+                    android:id="@+id/tv_linkaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="LinkAja"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/btn_linkaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cardView5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/bg_abu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.437"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.446">
 
 
-            <ImageView
-                android:id="@+id/imageView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/dana" />
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/ovo" />
 
-            <TextView
-                android:id="@+id/textView66"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="30dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/josefin_sans_bold"
-                android:text="Dana"
-                android:textColor="@color/abu"
-                android:textSize="@dimen/_16dp"
-                android:textStyle="normal" />
+                <TextView
+                    android:id="@+id/textView68"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="OVO"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
 
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="60dp"
-                tools:ignore="TouchTargetSizeCheck" />
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:background="@drawable/bg_abu">
+
+
+                <ImageView
+                    android:id="@+id/imageView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/dana" />
+
+                <TextView
+                    android:id="@+id/textView66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/josefin_sans_bold"
+                    android:text="Dana"
+                    android:textColor="@color/abu"
+                    android:textSize="@dimen/_16dp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_Continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btn_Continue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
-        android:fontFamily="@font/josefin_sans_bold"
-        android:text="Continue"
-        android:textAllCaps="false"
-        android:textSize="@dimen/_20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
-        tools:ignore="TouchTargetSizeCheck" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

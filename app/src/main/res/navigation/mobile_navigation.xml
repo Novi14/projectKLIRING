@@ -53,7 +53,7 @@
             app:destination="@id/edit_profil" />
         <action
             android:id="@+id/action_navigasi_profil_to_uoloudfotoprofilFragment"
-            app:destination="@id/uoloudfotoprofilFragment" />
+            app:destination="@id/uplodprofil2" />
         <action
             android:id="@+id/action_navigasi_profil_to_accountfragment"
             app:destination="@id/accountfragment" />
@@ -87,8 +87,8 @@
             android:id="@+id/action_edit_profil_to_navigasi_profil"
             app:destination="@id/navigasi_profil" />
         <action
-            android:id="@+id/action_edit_profil_to_uoloudfotoprofilFragment"
-            app:destination="@id/uoloudfotoprofilFragment" />
+            android:id="@+id/action_edit_profil_to_uplodprofil2"
+            app:destination="@id/uplodprofil2" />
     </fragment>
 
 
@@ -222,7 +222,7 @@
             android:id="@+id/action_uploadbuktitrasferFragment_to_uploadbuktiFragment"
             app:destination="@id/uploadbuktiFragment" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/alreadyFragment"
         android:name="com.example.homekliring.ui.profil.AlreadyFragment"
         android:label="fragment_already"
@@ -267,8 +267,8 @@
             app:destination="@id/navigation_home" />
     </fragment>
     <fragment
-        android:id="@+id/uoloudfotoprofilFragment"
-        android:name="com.example.homekliring.ui.profil.uploudprofilfragment"
+        android:id="@+id/uplodprofil2"
+        android:name="com.example.homekliring.ui.profil.uploadpotoprofil"
         android:label="fragment_uoloudfotoprofil"
         tools:layout="@layout/fragment_uoloudfotoprofil" >
         <action

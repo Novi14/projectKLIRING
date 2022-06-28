@@ -11,21 +11,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:fabCradleMargin="8dp"
-        android:background="@drawable/transparent_background"
-        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleMargin="@dimen/_5sdp"
+        android:background="@color/white"
+        app:fabCradleRoundedCornerRadius="@dimen/_20dp"
         app:fabCradleVerticalOffset="5dp"
         app:labelVisibilityMode="labeled">
 
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/transparent_background"
+            app:menu="@menu/bottom_nav_menu" />
+
     </com.google.android.material.bottomappbar.BottomAppBar>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@drawable/transparent_background"
-        app:menu="@menu/bottom_nav_menu" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_Keranjang"
@@ -38,7 +40,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
 
-    <androidx.fragment.app.FragmentContainerView
+    <fragment
         android:id="@+id/nav_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
