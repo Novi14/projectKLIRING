@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    tools:context="ui.Auth.Authentication.emailverifikasi.email_verifikasi"
     android:layout_height="match_parent"
     android:padding="@dimen/_16sdp">
 
@@ -12,7 +13,7 @@
         android:orientation="vertical" >
 
         <ImageView
-            android:id="@+id/imageView16"
+            android:id="@+id/btn_backemail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
@@ -36,7 +37,7 @@
             android:textSize="@dimen/_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_backemail" />
 
         <TextView
             android:id="@+id/textView6"
@@ -46,7 +47,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_30sdp"
             android:fontFamily="@font/josefin_sans_bold"
-            android:text="We have sent link verification to your/n email
+            android:text="We have sent link verification to your email
 Please\ncheck your email"
             android:textColor="@color/abu"
             android:textSize="@dimen/_14dp"
@@ -118,7 +119,18 @@ Please\ncheck your email"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
                 app:layout_constraintTop_toBottomOf="@+id/btn_OK" />
+
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textColor="@color/birutua"
+            android:layout_gravity="center"
+            android:text="example@gmail.com" />
 
     </LinearLayout>
 

@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/email_verifikasiFragment"
-        android:name="com.example."
+        android:name="com.example.homekliring.ui.Auth.Authentication.emailverifikasi.email_verifikasi"
         android:label="fragment_email_verifikasi"
         tools:layout="@layout/fragment_email_verifikasi" >
         <action

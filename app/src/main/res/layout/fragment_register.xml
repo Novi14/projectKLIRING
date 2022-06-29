@@ -89,7 +89,7 @@
                 android:layout_height="match_parent"
                 android:background="@drawable/bg_account"
                 android:fontFamily="@font/josefin_sans_bold"
-                android:hint="First Name"
+                android:hint="Full Name"
                 android:textColor="@color/abu"
                 android:textSize="@dimen/_14dp"
                 tools:layout_editor_absoluteX="40dp"
@@ -161,6 +161,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/bg_account"
                 android:hint="Repeat Password"
+                android:fontFamily="@font/josefin_sans_bold"
                 android:textColor="@color/abu"
                 android:textSize="@dimen/_14dp" />
         </com.google.android.material.textfield.TextInputLayout>
