@@ -32,7 +32,7 @@ class StartFragment : Fragment() {
 
         binding.btnGetHome.setOnClickListener {
 
-        findNavController().navigate(R.id.action_startFragment_to_mainActivity)
+        findNavController().navigate(R.id.action_startFragment_to_registerFragment)
         }
     }
 

@@ -61,7 +61,7 @@
 
     <fragment
         android:id="@+id/changepassword"
-        android:name="com.example.homekliring.ui.profil.ChangeProfilFragment"
+        android:name="com.example.homekliring.ui.Auth.Authentication.Changepassword.ChangeProfilFragment"
         android:label="fragment_changepassword"
         tools:layout="@layout/fragment_changepassword">
         <action
@@ -103,6 +103,9 @@
         <action
             android:id="@+id/action_historydone_to_navigation_home"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_historydone_to_history_proces"
+            app:destination="@id/history_proces" />
     </fragment>
 
     <fragment
@@ -110,9 +113,6 @@
         android:label="fragment_historionproses"
         android:name="com.example.homekliring.ui.history.historyoProcess"
         tools:layout="@layout/fragment_historionproses">
-        <action
-            android:id="@+id/action_historionproses_to_historionproces"
-            app:destination="@id/historionproces" />
         <action
             android:id="@+id/action_historionproses_to_historydone"
             app:destination="@id/historydone" />
@@ -129,10 +129,6 @@
     </fragment>
 
 
-    <fragment
-        android:id="@+id/historionproces"
-        android:label="fragment_historionproces"
-        tools:layout="@layout/fragment_historionproces"/>
     <fragment
         android:id="@+id/trasferfisrtFragment"
         android:label="fragment_trasferfisrt"
@@ -285,6 +281,18 @@
         android:name="com.example.homekliring.ui.Auth.Authentication.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/history_proces"
+        android:name="com.example.homekliring.ui.history.history_proces"
+        android:label="fragment_historyonprocess_1"
+        tools:layout="@layout/fragment_historyonprocess_1" >
+        <action
+            android:id="@+id/action_history_proces_to_trasfertokliringFragment"
+            app:destination="@id/trasfertokliringFragment" />
+        <action
+            android:id="@+id/action_history_proces_to_historydone"
+            app:destination="@id/historydone" />
+    </fragment>
 
 
 </navigation>

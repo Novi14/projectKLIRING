@@ -15,7 +15,8 @@
 
     <item
         android:id="@+id/navigasi_trasfer"
-        android:title=""/>
+        android:icon="@drawable/sand"
+        android:title="@string/title_trasfer"/>
 
     <item
         android:id="@+id/navigasi_profil"

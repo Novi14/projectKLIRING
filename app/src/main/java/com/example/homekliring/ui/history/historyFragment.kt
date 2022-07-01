@@ -41,6 +41,10 @@ class historyFragment : Fragment() {
                 findNavController().navigate(R.id.action_historydone_to_navigation_home)
             }
 
+            tvOnproces.setOnClickListener {
+                findNavController().navigate(R.id.action_historydone_to_history_proces)
+            }
+
 
         }
     }

@@ -148,7 +148,7 @@
             android:id="@+id/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_30sdp"
             android:background="@drawable/bg_account"
             app:layout_constraintEnd_toEndOf="parent"

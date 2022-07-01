@@ -1,12 +1,12 @@
 package com.example.homekliring.Data.Api
 
+import com.example.homekliring.Data.Response.ChangePaswordResponse
+import com.example.homekliring.Data.Response.ForgetpasswordReponse
 import com.example.homekliring.Data.Response.loginResponse
 import com.example.homekliring.Data.Response.registerResponse
 import retrofit2.Call
-import retrofit2.http.Body
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.POST
+import retrofit2.http.*
+
 interface ApiService {
 
     //Untuk login
@@ -23,7 +23,11 @@ interface ApiService {
         @Body param: Map<String, String>
     ): Call<registerResponse>
 
-
+    @FormUrlEncoded
+    @POST("/api/users/forget-password")
+    fun forgetPassword(
+        @Field("email") email: String,
+    ): Call<ForgetpasswordReponse>
 
 
 }
