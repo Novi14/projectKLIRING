@@ -25,7 +25,7 @@ class SplashFragment : Fragment() {
                         activity?.startActivity(Intent(activity, MainActivity::class.java))
                         activity?.finish()
                     } else findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
-                } else findNavController().navigate(R.id.action_splashFragment_to_startFragment)
+                } else findNavController().navigate(R.id.action_splashFragment_to_onboardingViewPagerFragment)
             } else findNavController().navigate(R.id.action_splashFragment_to_onboardingViewPagerFragment)
         }, 3000)
 

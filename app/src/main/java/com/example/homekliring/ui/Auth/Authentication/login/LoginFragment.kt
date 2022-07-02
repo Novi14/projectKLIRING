@@ -1,23 +1,29 @@
 package com.example.homekliring.ui.Auth.Authentication.login
 
-
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
 import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import com.example.homekliring.R
-import androidx.lifecycle.ViewModelProvider
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.navigation.fragment.findNavController
-import com.example.homekliring.Data.retrofit.RetrofitBuilder
+import com.example.homekliring.R
+import com.example.homekliring.DataStore.PREFERENCE_NAME
+import com.example.homekliring.MainActivity
 import com.example.homekliring.databinding.FragmentLoginBinding
+import com.example.homekliring.utils.Resource
+import org.koin.androidx.viewmodel.ext.android.viewModel
+
+val Context.dataStore by preferencesDataStore(name = PREFERENCE_NAME)
 
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
-    lateinit var viewModel:LoginViewModel
+    private val viewModel: LoginViewModel by viewModel()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,8 +37,6 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(this)[LoginViewModel::class.java]
-
         with(binding) {
             tvSigUp.setOnClickListener {
                 findNavController().navigate(R.id.action_loginFragment_to_registerFragment2)
@@ -43,29 +47,63 @@ class LoginFragment : Fragment() {
 
 
             btnLogin.setOnClickListener {
-                pbLoading.visibility = View.VISIBLE
 
                 if (validateInput()) {
                     viewModel.loginUser(
-                        RetrofitBuilder.getRetrofit(this@LoginFragment.requireActivity().applicationContext),
                         tietLogEmail.text.toString(),
                         tietLogPassword.text.toString()
                     ).observe(requireActivity()) {
-                        pbLoading.visibility = View.GONE
+                        when (it) {
+                            is Resource.Loading -> {
+                                pbLoading.visibility = View.VISIBLE
+                            }
+                            is Resource.Success -> {
+                                pbLoading.visibility = View.GONE
+                                val sharedPref = requireActivity().getSharedPreferences("userData", Context.MODE_PRIVATE)
+                                val editor = sharedPref.edit()
+                                editor.putString("token", it.data?.accessToken)
+                                editor.apply()
 
-                        if (it.accessToken.isNullOrEmpty()) {
-                            Toast.makeText(
-                                requireActivity(),
-                                "Failed To Login",
-                                Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(
-                                requireActivity(),
-                                "Login Success",
-                                Toast.LENGTH_SHORT
-                            ).show()
+                                val intent = Intent(requireActivity(), MainActivity::class.java)
+                                startActivity(intent)
 
-                            findNavController().navigate(R.id.action_loginFragment_to_mainActivity)
+                                loginFinished()
+
+                                requireActivity().finish()
+                            }
+                            is Resource.Error -> {
+                                pbLoading.visibility = View.VISIBLE
+
+                                when (it.statusCode) {
+                                    401 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Silahkan login kembali",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                                    404 -> {
+                                        binding.tillPassword.error = "Password anda salah"
+                                    }
+                                    101 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Tidak ada koneksi internet",
+                                            Toast.LENGTH_SHORT
+                                        )
+                                            .show()
+
+                                    }
+                                    102 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Mohon periksa jaringan anda",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                                }
+                                pbLoading.visibility = View.GONE
+                            }
                         }
                     }
                 }
@@ -73,28 +111,37 @@ class LoginFragment : Fragment() {
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 
     private fun validateInput(): Boolean {
         with(binding) {
-            return if (tietLogEmail.text?.isEmpty() == true || tietLogPassword.text?.isEmpty() == true) {
-                pbLoading.visibility = View.GONE
-
-                if (tietLogEmail.text?.isEmpty() == true) {
-                    tillemail.error = "Input tidak boleh kosong"
+            return when {
+                tietLogEmail.text?.trim().isNullOrEmpty() -> {
+                    tillemail.error = "Email tidak boleh kosong"
+                    false
                 }
-                if (tietLogPassword.text?.isEmpty() == true) {
-                    tillPassword.error = "Input tidak boleh kosong"
+                (tietLogPassword.text?.length ?: 0) < 8 -> {
+                    tillPassword.error = "Password minimal 8 karakter"
+                    false
                 }
+                else -> {
+                    tillemail.error = null
+                    tillPassword.error = null
+                    true
+                }
+            }
 
-                Toast.makeText(requireActivity(), "Input tidak boleh Kosong", Toast.LENGTH_SHORT).show()
-                false
-            } else true
         }
     }
 
-}
+    private fun loginFinished() {
+        val sharedPref = requireActivity().getSharedPreferences("Login", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
+        editor.apply()
+    }
 
+}

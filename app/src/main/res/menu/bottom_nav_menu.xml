@@ -13,10 +13,6 @@
         android:icon="@drawable/history"
         android:title="@string/title_history" />
 
-    <item
-        android:id="@+id/navigasi_trasfer"
-        android:icon="@drawable/sand"
-        android:title="@string/title_trasfer"/>
 
     <item
         android:id="@+id/navigasi_profil"

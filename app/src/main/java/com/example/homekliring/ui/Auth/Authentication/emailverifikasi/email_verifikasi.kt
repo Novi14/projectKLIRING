@@ -19,7 +19,6 @@ class email_verifikasi : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         _binding = FragmentEmailVerifikasiBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -28,23 +27,17 @@ class email_verifikasi : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val dataName = arguments?.getString(RegisterFragment.EXTRA_EMAIL)
-
-        binding.tvEmail.text = dataName
-
+        binding.btnOK.setOnClickListener {
+            findNavController().navigate(R.id.action_email_verifikasiFragment_to_loginFragment)
+        }
 
         binding.btnBackemail.setOnClickListener {
             findNavController().navigate(R.id.action_email_verifikasiFragment_to_registerFragment)
         }
-
-        binding.btnOK.setOnClickListener {
-            findNavController().navigate(R.id.action_email_verifikasiFragment_to_loginFragment)
-        }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
-
 }

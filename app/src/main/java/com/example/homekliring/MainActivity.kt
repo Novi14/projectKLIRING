@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavigation(){
-        val navHostFragment = supportFragmentManager.findFragmentById(binding.navFragment.id) as NavHostFragment
+        val navHostFragment = supportFragmentManager.findFragmentById(binding.mainContainer.id) as NavHostFragment
         binding.bottomNavigationView.setupWithNavController(navHostFragment.navController)
     }
 

@@ -12,6 +12,7 @@
         android:usesCleartextTraffic="true"
         android:icon="@drawable/logokliring"
         android:label="@string/app_name"
+        android:name="com.example.homekliring.Data.utils.BaseApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homekliring">
@@ -19,6 +20,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false"
+            android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_home" >
         </activity>
         <activity

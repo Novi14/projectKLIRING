@@ -1,33 +1,33 @@
 package com.example.homekliring.ui.Auth.Authentication.register
 
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.lifecycle.ViewModelProvider
+import androidx.datastore.preferences.preferencesDataStore
 import androidx.navigation.fragment.findNavController
-import com.example.homekliring.Data.retrofit.RetrofitBuilder
+import com.example.homekliring.DataStore.PREFERENCE_NAME
 import com.example.homekliring.databinding.FragmentRegisterBinding
 import com.example.homekliring.R
+import com.example.homekliring.utils.Resource
+import org.koin.androidx.viewmodel.ext.android.viewModel
+
+val Context.dataStore by preferencesDataStore(name = PREFERENCE_NAME)
 
 class RegisterFragment : Fragment() {
-
     private var _binding: FragmentRegisterBinding? = null
     private val binding get() = _binding!!
-    private lateinit var viewModel: RegisterViewModel
+    private val viewModel by viewModel<RegisterViewModel>()
 
-    companion object {
-        val EXTRA_EMAIL = "extra_email"
-    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         _binding = FragmentRegisterBinding.inflate(inflater, container, false)
         val view = binding.root
         return view
@@ -36,74 +36,86 @@ class RegisterFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(requireActivity())[RegisterViewModel::class.java]
-
         with(binding) {
-            tvLogIn.setOnClickListener {
-                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
-            }
-
             btnGetstarted.setOnClickListener {
                 pbLoading.visibility = View.VISIBLE
 
-                if(validateInput()) {
+                if(validateInput()){
                     viewModel.registerUser(
-                        RetrofitBuilder.getRetrofit(this@RegisterFragment.requireActivity().applicationContext),
                         tfEmail.text.toString(),tfPassword.text.toString(),tfFistname.text.toString()
-                       ).observe(requireActivity()) {
-                        pbLoading.visibility = View.GONE
+                    ).observe(requireActivity()) {
+                        when (it) {
+                            is Resource.Loading -> {
+                                pbLoading.visibility = View.VISIBLE
+                            }
+                            is Resource.Success -> {
+                                findNavController().navigate(R.id.action_registerFragment_to_email_verifikasiFragment)
 
-                        if (it.id.isNullOrEmpty()) {
-                            Toast.makeText(
-                                requireActivity(),
-                                "Failed to register",
-                                Toast.LENGTH_SHORT).show()
-                        } else {
-                            Toast.makeText(
-                                requireActivity(),
-                                "Success Register \n Your id : ${it.id}",
-                                Toast.LENGTH_SHORT).show()
+                                pbLoading.visibility = View.GONE
+                            }
+                            is Resource.Error -> {
+                                pbLoading.visibility = View.VISIBLE
 
-                            val mBundle = Bundle()
-                            mBundle.putString(EXTRA_EMAIL, "${it.email}")
+                                when (it.statusCode) {
+                                    401 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Silahkan coba daftar kembali",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                                    404 -> {
+                                        binding.tillPassword2.error = "Password anda salah"
+                                    }
+                                    101 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Tidak ada koneksi internet",
+                                            Toast.LENGTH_SHORT
+                                        )
+                                            .show()
 
-                            findNavController().navigate(R.id.action_registerFragment_to_email_verifikasiFragment, mBundle)
+                                    }
+                                    102 -> {
+                                        Toast.makeText(
+                                            requireContext(),
+                                            "Mohon periksa jaringan anda",
+                                            Toast.LENGTH_SHORT
+                                        ).show()
+                                    }
+                                }
+                                pbLoading.visibility = View.GONE
+                            }
                         }
                     }
                 }
             }
 
+            btnBack1.setOnClickListener {
+                findNavController().navigate(R.id.action_registerFragment_to_startFragment)
+            }
+
+            tvLogIn.setOnClickListener {
+                findNavController().navigate(R.id.action_registerFragment_to_loginFragment)
+            }
         }
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 
     private fun validateInput(): Boolean {
         with(binding) {
-            return if (tfFistname.text?.isEmpty() == true || tfPassword.text?.isEmpty() == true || tfEmail.text?.isEmpty() == true) {
-                pbLoading.visibility = View.GONE
-
-                if (tfFistname.text?.isEmpty() == true) {
-                    tillFistname.error = "Input tidak boleh kosong"
-                }
-                if (tfPassword.text?.isEmpty() == true) {
-                    tillPassword2.error = "Input tidak boleh kosong"
-                }
-                if (tfEmail.text?.isEmpty() == true) {
-                    tillEmail.error = "Input tidak boleh kosong"
-                }
-
+            return if (tfFistname.text?.isEmpty() == true && tfEmail.text?.isEmpty() == true && tfPassword.text?.isEmpty() == null) {
                 Toast.makeText(
-                    requireActivity(),
-                    "Input tidak boleh Kosong",
+                    requireContext(),
+                    "Input tidak boleh kosong",
                     Toast.LENGTH_SHORT
                 ).show()
                 false
             } else true
-
         }
     }
 
