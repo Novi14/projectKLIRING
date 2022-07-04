@@ -239,6 +239,7 @@
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:fontFamily="@font/josefin_sans_bold"
                 android:text="Continue"
+                android:layout_marginBottom="@dimen/_50sdp"
                 android:textAllCaps="false"
                 android:textSize="20dp"
                 app:layout_constraintEnd_toEndOf="parent"

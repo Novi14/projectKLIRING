@@ -114,6 +114,7 @@
                 android:fontFamily="@font/josefin_sans_bold"
                 android:gravity="center"
                 android:text="See History"
+                android:layout_marginBottom="@dimen/_50sdp"
                 android:textColor="@color/merah"
                 android:textSize="@dimen/_16dp"
                 app:layout_constraintEnd_toEndOf="parent"

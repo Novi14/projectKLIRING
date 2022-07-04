@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_navigation_home_to_notifFragment2"
             app:destination="@id/notifFragment2" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigasi_trasfer"
+            app:destination="@id/navigasi_trasfer" />
 
     </fragment>
     <dialog
@@ -222,7 +225,11 @@
         android:id="@+id/alreadyFragment"
         android:name="com.example.homekliring.ui.profil.AlreadyFragment"
         android:label="fragment_already"
-        tools:layout="@layout/fragment_already" />
+        tools:layout="@layout/fragment_already" >
+        <action
+            android:id="@+id/action_alreadyFragment_to_navigasi_profil"
+            app:destination="@id/navigasi_profil" />
+    </dialog>
     <fragment
         android:id="@+id/buktitrasferFragment"
         android:name="com.example.homekliring.ui.trasfer.BuktiTrasfer"

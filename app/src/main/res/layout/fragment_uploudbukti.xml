@@ -48,6 +48,7 @@
             android:layout_marginEnd="@dimen/_20sdp"
             android:text="Done"
             android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/_50sdp"
             android:textSize="@dimen/_20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

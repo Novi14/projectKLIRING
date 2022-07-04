@@ -171,6 +171,7 @@
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_30sdp"
             android:orientation="vertical"
+            android:layout_marginBottom="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

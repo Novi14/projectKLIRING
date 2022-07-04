@@ -10,6 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="vertical">
 
         <ImageView
@@ -108,6 +109,7 @@ Contact us at :"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             android:drawableStart="@drawable/vektortrlpon"
             android:fontFamily="@font/josefin_sans_bold"

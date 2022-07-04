@@ -266,6 +266,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
             android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_20sdp"
             android:fontFamily="@font/josefin_sans_light"
             android:text="Please click the button above if you already transfer"
