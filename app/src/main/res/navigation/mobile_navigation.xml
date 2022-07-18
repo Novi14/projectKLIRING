@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.homekliring.ui.home.HomeFragment"
+        android:name="com.home.kliring.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -29,7 +29,7 @@
     </fragment>
     <dialog
         android:id="@+id/accountfragment"
-        android:name="com.example.homekliring.ui.profil.AccountFragment"
+        android:name="com.home.kliring.ui.profil.AccountFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" >
         <action
@@ -42,7 +42,7 @@
 
     <fragment
         android:id="@+id/navigasi_profil"
-        android:name="com.example.homekliring.ui.profil.ProfilFragment"
+        android:name="com.home.kliring.ui.profil.ProfilFragment"
         android:label="fragment_profil"
         tools:layout="@layout/fragment_profile">
         <action
@@ -64,7 +64,7 @@
 
     <fragment
         android:id="@+id/changepassword"
-        android:name="com.example.homekliring.ui.Auth.Authentication.Changepassword.ChangeProfilFragment"
+        android:name="com.home.kliring.ui.Auth.Authentication.Changepassword.ChangeProfilFragment"
         android:label="fragment_changepassword"
         tools:layout="@layout/fragment_changepassword">
         <action
@@ -77,7 +77,7 @@
 
     <fragment
         android:id="@+id/edit_profil"
-        android:name="com.example.homekliring.ui.profil.EditprofilFragment"
+        android:name="com.home.kliring.ui.profil.EditprofilFragment"
         android:label="fragment_account"
         tools:layout="@layout/fragment_editprofil">
         <action
@@ -98,7 +98,7 @@
     <fragment
         android:id="@+id/historydone"
         android:label="fragment_history"
-        android:name="com.example.homekliring.ui.history.historyFragment"
+        android:name="com.home.kliring.ui.history.historyFragment"
         tools:layout="@layout/fragment_historydone">
         <action
             android:id="@+id/action_historydone_to_historionproses"
@@ -114,7 +114,7 @@
     <fragment
         android:id="@+id/historionproses"
         android:label="fragment_historionproses"
-        android:name="com.example.homekliring.ui.history.historyoProcess"
+        android:name="com.home.kliring.ui.history.historyoProcess"
         tools:layout="@layout/fragment_historionproses">
         <action
             android:id="@+id/action_historionproses_to_historydone"
@@ -123,7 +123,7 @@
 
     <fragment
         android:id="@+id/trasaksiberhasil"
-        android:name="com.example.homekliring.ui.trasfer.Transaksiberhasilfragment"
+        android:name="com.home.kliring.ui.trasfer.Transaksiberhasilfragment"
         android:label="fragment_transaksiberhasil"
         tools:layout="@layout/fragment_transaksiberhasil">
         <action
@@ -135,7 +135,7 @@
     <fragment
         android:id="@+id/trasferfisrtFragment"
         android:label="fragment_trasferfisrt"
-        android:name="com.example.homekliring.ui.trasfer.trasferfrish"
+        android:name="com.home.kliring.ui.trasfer.trasferfrish"
         tools:layout="@layout/fragment_trasferfisrt" >
         <action
             android:id="@+id/action_trasferfisrtFragment_to_trsfermetodeFragment"
@@ -147,7 +147,7 @@
     <fragment
         android:id="@+id/trsfermetodeFragment"
         android:label="fragment_trsfermetode"
-        android:name="com.example.homekliring.ui.trasfer.trasfermetode"
+        android:name="com.home.kliring.ui.trasfer.trasfermetode"
         tools:layout="@layout/fragment_trsfermetode" >
         <action
             android:id="@+id/action_trsfermetodeFragment_to_trasfermetode1Fragment"
@@ -160,7 +160,7 @@
     <fragment
         android:id="@+id/navigasi_trasfer"
         android:label="fragment_trasfer"
-        android:name="com.example.homekliring.ui.history.TrasferFragment"
+        android:name="com.home.kliring.ui.history.TrasferFragment"
         tools:layout="@layout/fragment_trasfer" >
         <action
             android:id="@+id/action_navigasi_trasfer_to_trasferfisrtFragment"
@@ -169,7 +169,7 @@
     <fragment
         android:id="@+id/uploudprofilFragment"
         android:label="fragment_uploudprofil"
-        android:name="com.example.homekliring.ui.profil.uploudprofilfragment"
+        android:name="com.home.kliring.ui.profil.uploudprofilfragment"
         tools:layout="@layout/fragment_uploudprofil" >
         <action
             android:id="@+id/action_uploudprofilFragment_to_alreadyFragment"
@@ -178,7 +178,7 @@
     <fragment
         android:id="@+id/trasfermetode1Fragment"
         android:label="fragment_trasfermetode1"
-        android:name="com.example.homekliring.ui.trasfer.TrasfermetodeFragment"
+        android:name="com.home.kliring.ui.trasfer.TrasfermetodeFragment"
         tools:layout="@layout/fragment_trasfermetode1" >
         <action
             android:id="@+id/action_trasfermetode1Fragment_to_trasfertokliringFragment"
@@ -190,7 +190,7 @@
     <fragment
         android:id="@+id/trasfertokliringFragment"
         android:label="fragment_trasfertokliring"
-        android:name="com.example.homekliring.ui.trasfer.TrasfertokliringFragment"
+        android:name="com.home.kliring.ui.trasfer.TrasfertokliringFragment"
         tools:layout="@layout/fragment_trasfertokliring" >
         <action
             android:id="@+id/action_trasfertokliringFragment_to_uploadbuktitrasferFragment"
@@ -206,7 +206,7 @@
     <fragment
         android:id="@+id/uploadbuktiFragment"
         android:label="fragment_uploadbukti"
-        android:name="com.example.homekliring.ui.trasfer.UplodbuktiFragment"
+        android:name="com.home.kliring.ui.trasfer.UplodbuktiFragment"
         tools:layout="@layout/fragment_uploudbukti" >
         <action
             android:id="@+id/action_uploadbuktiFragment_to_trasaksiberhasil"
@@ -214,7 +214,7 @@
     </fragment>
     <fragment
         android:id="@+id/uploadbuktitrasferFragment"
-        android:name="com.example.homekliring.ui.trasfer.Uplodbuktitrasferfragment"
+        android:name="com.home.kliring.ui.trasfer.Uplodbuktitrasferfragment"
         android:label="fragment_uploadbuktitrasfer"
         tools:layout="@layout/fragment_uploadbuktitrasfer" >
         <action
@@ -223,7 +223,7 @@
     </fragment>
     <dialog
         android:id="@+id/alreadyFragment"
-        android:name="com.example.homekliring.ui.profil.AlreadyFragment"
+        android:name="com.home.kliring.ui.profil.AlreadyFragment"
         android:label="fragment_already"
         tools:layout="@layout/fragment_already" >
         <action
@@ -232,7 +232,7 @@
     </dialog>
     <fragment
         android:id="@+id/buktitrasferFragment"
-        android:name="com.example.homekliring.ui.trasfer.BuktiTrasfer"
+        android:name="com.home.kliring.ui.trasfer.BuktiTrasfer"
         android:label="fragment_buktitrasfer"
         tools:layout="@layout/fragment_buktitrasfer" >
         <action
@@ -241,7 +241,7 @@
     </fragment>
     <fragment
         android:id="@+id/notifikasi_besrhasillogout"
-        android:name="com.example.homekliring.ui.profil.logoutFragment"
+        android:name="com.home.kliring.ui.profil.logoutFragment"
         android:label="fragment_notifikasi_besrhasillogout"
         tools:layout="@layout/fragment_notifikasi_besrhasillogout" >
         <action
@@ -253,7 +253,7 @@
     </fragment>
     <fragment
         android:id="@+id/notifFragment2"
-        android:name="com.example.homekliring.ui.notifications.NotificationsFragment"
+        android:name="com.home.kliring.ui.notifications.NotificationsFragment"
         android:label="fragment_notif"
         tools:layout="@layout/fragment_notif" >
         <action
@@ -262,7 +262,7 @@
     </fragment>
     <fragment
         android:id="@+id/navigation_help"
-        android:name="com.example.homekliring.ui.help.helpFragment"
+        android:name="com.home.kliring.ui.help.helpFragment"
         android:label="fragment_help"
         tools:layout="@layout/fragment_help" >
         <action
@@ -271,7 +271,7 @@
     </fragment>
     <fragment
         android:id="@+id/uplodprofil2"
-        android:name="com.example.homekliring.ui.profil.uploadpotoprofil"
+        android:name="com.home.kliring.ui.profil.uploadpotoprofil"
         android:label="fragment_uoloudfotoprofil"
         tools:layout="@layout/fragment_uoloudfotoprofil" >
         <action
@@ -280,17 +280,17 @@
     </fragment>
     <fragment
         android:id="@+id/secondScreenFragment"
-        android:name="com.example.homekliring.ui.Auth.Onboarding.Screens.SecondScreenFragment"
+        android:name="com.home.kliring.ui.Auth.Onboarding.Screens.SecondScreenFragment"
         android:label="fragment_second_screen"
         tools:layout="@layout/fragment_second_screen" />
     <fragment
         android:id="@+id/startFragment2"
-        android:name="com.example.homekliring.ui.Auth.Authentication.StartFragment"
+        android:name="com.home.kliring.ui.Auth.Authentication.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" />
     <fragment
         android:id="@+id/history_proces"
-        android:name="com.example.homekliring.ui.history.history_proces"
+        android:name="com.home.kliring.ui.history.history_proces"
         android:label="fragment_historyonprocess_1"
         tools:layout="@layout/fragment_historyonprocess_1" >
         <action

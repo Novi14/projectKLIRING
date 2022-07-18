@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-     package="com.example.homekliring" >
+     package="com.home.kliring" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,13 +12,13 @@
         android:usesCleartextTraffic="true"
         android:icon="@drawable/logokliring"
         android:label="@string/app_name"
-        android:name="com.example.homekliring.Data.utils.BaseApplication"
+        android:name="com.home.kliring.Data.utils.BaseApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Homekliring">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.home.kliring.MainActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustPan"
             android:label="@string/title_activity_home" >
@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.Auth.AuthActivity"
+            android:name="com.home.kliring.ui.Auth.AuthActivity"
             android:exported="true" >
 
 
